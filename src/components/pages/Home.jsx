@@ -151,58 +151,49 @@ const Home = () => {
 
             {/* Tools and Platform */}
             <Box sx={{ textAlign: "center", border: "2px solid pink" }}  >
-                <Typography variant='h5'>Frontend </Typography>
+                <Typography variant='h5'>Tools and Platform </Typography>
 
                 <Box marginTop={1}>
 
                     <Grid container spacing={2} justifyContent="center" alignItems="center" >
-                        <Grid item xs={2} sm={1}>
-                            <div class="image">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-                            </div>
-                        </Grid>
-                        <Grid item xs={2} sm={1}>
-                            <div class="image">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-                            </div>
-                        </Grid>
-                        <Grid item xs={2} sm={1}>
-                            <div class="image">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-                            </div>
-                        </Grid>
-                        <Grid item xs={2} sm={1}>
-                            <div class="image">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-                            </div>
-                        </Grid>
-                        <Grid item xs={2} sm={1}>
-                            <div class="image">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-                            </div>
-                        </Grid>
-                        <Grid item xs={2} sm={1}>
-                            <div class="image">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-                            </div>
-                        </Grid>
-                        <Grid item xs={2} sm={1}>
-                            <div class="image">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-                            </div>
 
-                        </Grid>
+                        {/* AWS */}
                         <Grid item xs={2} sm={1}>
                             <div class="image">
-                                <img
-                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                            </div>
+                        </Grid>
+
+                        {/* github */}
+                        <Grid item xs={2} sm={1}>
+                            <div class="image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                            </div>
+                        </Grid>
+
+                        {/* docker */}
+                        <Grid item xs={2} sm={1}>
+                            <div class="image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
+                            </div>
+                        </Grid>
+
+                        {/* jira */}
+                        <Grid item xs={2} sm={1}>
+                            <div class="image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" />
+                            </div>
+                        </Grid>
+                        {/* vscode */}
+                        <Grid item xs={2} sm={1}>
+                            <div class="image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
+                            </div>
+                        </Grid>
+                        {/* postman */}
+                        <Grid item xs={2} sm={1}>
+                            <div class="image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
                             </div>
                         </Grid>
 
