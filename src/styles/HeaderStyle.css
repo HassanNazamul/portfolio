@@ -1,0 +1,17 @@
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.draw-nav-menu li a {
+    text-decoration: none;
+    color: black;
+}
