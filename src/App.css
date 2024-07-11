@@ -1,24 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+body {
+    /* background-color: #1f1f38 !important; */
+    background-color: rgb(8, 8, 8) !important;
+
+    /* background-image: url(../src/assets/bg-texture.png); */
+    /* background-image: url(../src/assets/bg-pat.png); */
+
+}
+
+
 /* App.css */
-.app {
-    transition: background-color 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: Arial, sans-serif;
+p,
+h1,
+h2,
+h4,
+h5,
+h6 {
+    color: white;
 }
 
-.day-mode {
-    background-color: #ffffff;
-    /* Light background */
-    color: #000000;
-    /* Dark text */
+span {
+    color: #00ffff;
 }
 
-.night-mode {
-    background-color: #222222;
-    /* Dark background */
-    color: #ffffff;
-    /* Light text */
-}
+

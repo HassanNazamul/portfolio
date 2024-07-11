@@ -1,0 +1,13 @@
+.customCard {
+    /* background-color: #2c2c6c !important; */
+    border-radius: 15px !important;
+    border: 2px solid #00ffff;
+    background-color:transparent !important
+
+    /* transition: background-color 0.3s ease !important; */
+}
+
+/* 
+.customCard:hover {
+    background-color:transparent !important
+} */

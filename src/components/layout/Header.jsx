@@ -44,21 +44,22 @@ const Header = () => {
 
     return (
 
-
-
-        <Box>
+        <Box >
 
             <AppBar
                 component={'nav'}
                 position="fixed"
+                sx={{
+                    backgroundColor: "rgba(255, 255, 255, 0.2)"
+                }}
             >
                 <Toolbar>
                     <Typography
                         flexGrow={1}
                         component={"div"}
                         variant="h5"
-                        color={"black"}>
-                        Mohammed's Portfolio
+                    >
+                        <span>Mohammed's</span> Portfolio
                     </Typography>
 
 
@@ -81,14 +82,14 @@ const Header = () => {
                             aria-label="secondary tabs example"
                         >
                             <Tab value="one" label="Home" component={Link}
-                                to="/">
+                                to="/" sx={{ color: 'white' }}>
                             </Tab>
                             <Tab value="two" label="Projects" component={Link}
-                                to="/project">
+                                to="/project" sx={{ color: 'white' }}>
 
                             </Tab>
                             <Tab value="three" label="Resume" component={Link}
-                                to="/resume" >
+                                to="/resume" sx={{ color: 'white' }}>
                             </Tab>
 
                         </Tabs>
