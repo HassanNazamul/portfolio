@@ -6,9 +6,9 @@ import "./App.css"
 
 function App() {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route exact path="/" element={<Home />}></Route>
           <Route path="/project" element={<Project />} ></Route>
         </Routes>
       </BrowserRouter>
