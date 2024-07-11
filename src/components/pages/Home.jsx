@@ -42,7 +42,6 @@ const Home = () => {
 
 
 
-            </Box>
 
             {/* SKills */}
             <Box padding={8}>

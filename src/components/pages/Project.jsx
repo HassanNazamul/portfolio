@@ -6,7 +6,6 @@ import weatherImg from '../../assets/weather.png'
 import loginImg from '../../assets/login.png'
 import ticImg from '../../assets/tic.png'
 import codePenImg from '../../assets/codepen.png'
-import { Description } from '@mui/icons-material';
 
 
 
