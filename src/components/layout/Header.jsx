@@ -1,6 +1,7 @@
-import { AppBar, Box, Toolbar, Typography, IconButton, Drawer, Tabs, Tab } from '@mui/material';
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import { AppBar, Button, Box, Toolbar, Typography, IconButton, Drawer, Tabs, Tab } from '@mui/material';
 
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import CV from "../../assets/Resume.pdf"
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import "../../styles/HeaderStyle.css"
@@ -9,11 +10,10 @@ const Header = () => {
 
     const [drawOpen, setDrawOpen] = useState(false);
 
-    const [value, setValue] = useState('one');
+    const [value, setValue] = useState(0);
 
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-        console.log(value);
+    const handleChange = (e, val) => {
+        setValue(val);  // Updates the state asynchronously
     };
 
 
@@ -30,27 +30,33 @@ const Header = () => {
         >
             <Tabs
                 value={value}
-                onChange={handleChange}
+                onClick={handleChange}
                 orientation="vertical"
                 textColor="secondary"
                 indicatorColor="secondary"
             >
                 <Tab value="one" label="Home" component={Link} to={"/"} />
                 <Tab value="two" label="Projects" component={Link} to={"/project"} />
-                <Tab value="three" label="Resume" component={Link} to={"/resume"} />
+                <Button
+                    style={{ borderColor: "#00ffff", color: '#00ffff' }}
+                    size="large" variant='outlined' href={CV}>
+                    View CV
+                </Button>
             </Tabs>
         </Box>
     )
 
     return (
 
+
         <Box >
+
 
             <AppBar
                 component={'nav'}
-                position="fixed"
+                position="static"
                 sx={{
-                    backgroundColor: "rgba(255, 255, 255, 0.2)"
+                    backgroundColor: "transparent"
                 }}
             >
                 <Toolbar>
@@ -77,38 +83,37 @@ const Header = () => {
                         <Tabs
                             value={value}
                             onChange={handleChange}
-                            textColor="secondary"
-                            indicatorColor="secondary"
-                            aria-label="secondary tabs example"
+                            TabIndicatorProps={{
+                                style: { display: "none" }
+                            }}
                         >
-                            <Tab value="one" label="Home" component={Link}
-                                to="/" sx={{ color: 'white' }}>
-                            </Tab>
-                            <Tab value="two" label="Projects" component={Link}
-                                to="/project" sx={{ color: 'white' }}>
+                            <Tab style={{ color: "white" }} value="one" label="Home" component={Link} to={"/"} />
 
-                            </Tab>
-                            <Tab value="three" label="Resume" component={Link}
-                                to="/resume" sx={{ color: 'white' }}>
-                            </Tab>
+                            <Tab style={{ color: "white" }} value="two" label="Projects" component={Link} to={"/project"} />
 
+                            <Button
+                                style={{ borderColor: "#00ffff", color: '#00ffff' }}
+                                size="large" variant='outlined' href={CV}>
+                                View CV
+                            </Button>
                         </Tabs>
                     </Box>
 
-                </Toolbar>
-            </AppBar>
+                </Toolbar >
+            </AppBar >
 
             <Drawer
                 open={drawOpen}
                 variant='temporary'
                 onClose={() => (setDrawOpen(!drawOpen))}
                 anchor='right'
+                sx={{ backgroundColor: "transparent" }}
             >
                 {drawer}
             </Drawer>
 
             <Toolbar />
-        </Box>
+        </Box >
     );
 }
 

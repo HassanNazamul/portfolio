@@ -11,7 +11,7 @@ const Home = () => {
 
     useEffect(() => {
         const typed = new Typed(".auto-input", {
-            strings: ["Full Stack Developer", "Backend Developer", "UX / UI Designer", "Web Application Developer", "Java Developer"],
+            strings: ["Full Stack Developer", "Backend Java Developer", "Web Application Developer"],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true
@@ -37,9 +37,13 @@ const Home = () => {
             }}>
 
 
-                <Typography variant='h2'>Mohammed Nazamul Hassan</Typography>
+                <Typography variant='h2' style={{ fontWeight: 'bold' }}>Mohammed Nazamul Hassan</Typography>
                 <h2 style={{ color: "white" }}>I'm a <span className="auto-input"></span></h2>
+                <Typography textAlign={'center'} mt={4}>
+                    A passionate developer and lifelong learner, I am dedicated to innovation and creating impactful software solutions.
+                </Typography>
 
+            </Box>
 
 
 
@@ -144,7 +148,7 @@ const Home = () => {
                 <Grid container columnSpacing={3} rowGap={12}>
 
                     {/* <Experince>*/}
-                    <Grid item sm={6} xs={12} >
+                    <Grid item sm={12} xs={12} >
                         <Box>
                             <Typography
                                 variant='h2' mb={2} sx={{ textAlign: "center" }}>Co-op Experience
@@ -163,9 +167,11 @@ const Home = () => {
                                         </Grid>
                                         <Typography variant='subtitle1' mb={2}>SKill Squirrel</Typography>
                                         <ul style={{ color: "white" }}>
-                                            <li>Implemented feature X using React and Redux.</li>
-                                            <li>Developed REST APIs using Spring Boot.</li>
-                                            <li>Collaborated in Agile sprints for project delivery.</li>
+
+                                            <li>Led the development of implementing accessibility in adherence to W3C standards.</li>
+                                            <li>Implemented Jest JUnit tests, achieving 74% code coverage and reducing deployment errors.</li>
+                                            <li>Eliminate hardcoded values and redundant code, resulting in a more manageable codebase.</li>
+                                            <li>Participated in weekly stand-up meetings with project updates and discussions</li>
                                         </ul>
 
                                     </CardContent>
@@ -176,7 +182,7 @@ const Home = () => {
                     </Grid>
 
                     {/* Education */}
-                    <Grid item sm={6} xs={12}>
+                    {/* <Grid item sm={12} xs={12}>
                         <Box>
                             <Typography variant='h2' mb={2} sx={{ textAlign: "center" }}>Education</Typography>
                         </Box>
@@ -186,14 +192,14 @@ const Home = () => {
                                 <CardContent >
                                     <Grid container justifyContent={'space-between'}>
                                         <Grid item >
-                                            <Typography variant="h5">Sheridan College</Typography>
+                                            <Typography variant="h5">Software Development and Network Engineering</Typography>
                                         </Grid>
                                         <Grid item>
                                             <Typography variant="subtitle1">Jan 2023 - Dec 2025</Typography>
                                         </Grid>
                                     </Grid>
                                     <Typography variant="subtitle1" mb={2}>
-                                        Software Development and Network Engineering
+                                        Sheridan College
                                     </Typography>
 
                                     <ul style={{ color: "white" }}>
@@ -205,13 +211,10 @@ const Home = () => {
                                 </CardContent>
                             </Box>
                         </Card>
-                    </Grid>
+                    </Grid> */}
 
                 </Grid>
             </Box>
-
-
-
         </Layout>
     );
 }

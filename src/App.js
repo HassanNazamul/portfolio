@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Project from "./components/pages/Project";
-import Resume from "./components/pages/Resume"
 import Home from "./components/pages/Home";
 import "./App.css"
 
@@ -10,7 +9,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/resume" element={<Resume />}></Route>
           <Route path="/project" element={<Project />} ></Route>
         </Routes>
       </BrowserRouter>

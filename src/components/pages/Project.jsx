@@ -20,18 +20,21 @@ const cardData = [
     {
         imageUrl: loginImg,
         title: 'Registration',
+        description: ' React, Firebase, Rest API',
         github: "",
         open: "https://hassannazamul.github.io/authentication-react-firebase/"
     },
     {
         imageUrl: ticImg,
         title: 'Tic Tac Toe',
+        description: ' React, React Hooks',
         github: "",
         open: "https://hassannazamul.github.io/tic-tac-toe-game/"
     },
     {
         imageUrl: codePenImg,
         title: 'Code Pen Clone',
+        description: ' JavaScript, Html, Css',
         github: "",
         open: "https://hassannazamul.github.io/code-pen-clone/"
     },
@@ -44,7 +47,7 @@ const Project = () => {
             <Box padding={15}>
                 <Grid container rowGap={5}>
                     {cardData.map((item) => (
-                        <Grid key={item} item xs={12} sm={6} sx={{
+                        <Grid key={item.title} item xs={12} sm={6} sx={{
                             display: "flex",
                             justifyContent: "center"
                         }}>
