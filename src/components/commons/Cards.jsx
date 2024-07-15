@@ -21,6 +21,7 @@ const Cards = ({ image, title, site, github, desc }) => {
 
     return (
         <Card
+            //custom hover effect on individual cards
             sx={{
                 maxWidth: 500,
                 minWidth: 300,
@@ -50,13 +51,18 @@ const Cards = ({ image, title, site, github, desc }) => {
                     </Typography>
                 )}
             </CardContent>
+
             <CardActions sx={{ backgroundColor: 'rgba(255, 255, 255, 0.04)' }}>
+
+                {/* button to redirect to the project */}
                 <a href={site} target="_blank" rel="noopener noreferrer">
                     <Button variant="contained" size="small">
                         Open
                     </Button>
                 </a>
-                <Button variant="contained" size="small">
+
+                {/* button to redirect to the github link */}
+                <Button variant="contained" size="small" target='_blank' href={github}>
                     Github
                 </Button>
             </CardActions>

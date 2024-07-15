@@ -1,13 +1,14 @@
 import { AppBar, Button, Box, Toolbar, Typography, IconButton, Drawer, Tabs, Tab } from '@mui/material';
 
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import CV from "../../assets/Resume.pdf"
+import CV from "../../assets/mohammedResume.pdf"
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import "../../styles/HeaderStyle.css"
 
 const Header = () => {
 
+    //variable to toggle drawer
     const [drawOpen, setDrawOpen] = useState(false);
 
     const [value, setValue] = useState(0);
@@ -21,6 +22,7 @@ const Header = () => {
         setDrawOpen(!drawOpen);
     }
 
+    //inside drawer all navigation link
     const drawer = (
         <Box
             sx={{
@@ -51,7 +53,6 @@ const Header = () => {
 
         <Box >
 
-
             <AppBar
                 component={'nav'}
                 position="static"
@@ -60,6 +61,8 @@ const Header = () => {
                 }}
             >
                 <Toolbar>
+
+                    {/* Logo name */}
                     <Typography
                         flexGrow={1}
                         component={"div"}
@@ -68,7 +71,7 @@ const Header = () => {
                         <span>Mohammed's</span> Portfolio
                     </Typography>
 
-
+                    {/* this button visible only in mobile view */}
                     <IconButton
                         color="inherit"
                         aria-label='open-drawer'
@@ -79,6 +82,7 @@ const Header = () => {
                         <MenuRoundedIcon />
                     </IconButton>
 
+                    {/* this is visible in wide screen view only */}
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         <Tabs
                             value={value}
@@ -93,7 +97,7 @@ const Header = () => {
 
                             <Button
                                 style={{ borderColor: "#00ffff", color: '#00ffff' }}
-                                size="large" variant='outlined' href={CV}>
+                                size="large" variant='outlined' target='_blank' href={CV}>
                                 View CV
                             </Button>
                         </Tabs>
@@ -102,6 +106,7 @@ const Header = () => {
                 </Toolbar >
             </AppBar >
 
+            {/* When Drwaer opens this get triggered */}
             <Drawer
                 open={drawOpen}
                 variant='temporary'

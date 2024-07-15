@@ -9,9 +9,10 @@ import "../../styles/home.css";
 
 const Home = () => {
 
+    //for typing animation
     useEffect(() => {
         const typed = new Typed(".auto-input", {
-            strings: ["Full Stack Developer", "Backend Java Developer", "Web Application Developer"],
+            strings: ["Full Stack Developer", "Backend Java Developer", "Frontend Developer"],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true
@@ -40,7 +41,7 @@ const Home = () => {
                 <Typography variant='h2' style={{ fontWeight: 'bold' }}>Mohammed Nazamul Hassan</Typography>
                 <h2 style={{ color: "white" }}>I'm a <span className="auto-input"></span></h2>
                 <Typography textAlign={'center'} mt={4}>
-                    A passionate developer and lifelong learner, I am dedicated to innovation and creating impactful software solutions.
+                    A passionate developer and lifelong learner.
                 </Typography>
 
             </Box>
@@ -169,7 +170,7 @@ const Home = () => {
                                         <ul style={{ color: "white" }}>
 
                                             <li>Led the development of implementing accessibility in adherence to W3C standards.</li>
-                                            <li>Implemented Jest JUnit tests, achieving 74% code coverage and reducing deployment errors.</li>
+                                            <li>Implemented Jest JUnit tests, achieving comprehensive code coverage and reducing deployment errors.</li>
                                             <li>Eliminate hardcoded values and redundant code, resulting in a more manageable codebase.</li>
                                             <li>Participated in weekly stand-up meetings with project updates and discussions</li>
                                         </ul>
