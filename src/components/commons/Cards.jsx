@@ -63,27 +63,7 @@ const Cards = ({ image, title, site, github, desc }) => {
         </Card>
     );
 
-    // return (
-    //     <Card sx={{ maxWidth: 500, minWidth: 400, background: "transparent" }} >
-    //         <CardMedia
-    //             sx={{ height: 200 }}
-    //             image={image}
-    //             title="green iguana"
-    //         />
-    //         <CardContent sx={{ backgroundColor: 'rgba(255, 255, 255, 0.04)' }}>
-    //             <Typography color={'white'} variant="h5" component="div">
-    //                 {title}
-    //             </Typography>
-    //         </CardContent>
-    //         <CardActions sx={{ backgroundColor: 'rgba(255, 255, 255, 0.04)' }}>
 
-    //             <a href={site} target="_blank" rel="noopener noreferrer">
-    //                 <Button variant='contained' size="small">Open</Button>
-    //             </a>
-    //             <Button variant="contained" size="small">Github</Button>
-    //         </CardActions>
-    //     </Card>
-    // );
 }
 
 export default Cards
