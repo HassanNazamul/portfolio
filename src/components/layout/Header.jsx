@@ -1,7 +1,7 @@
 import { AppBar, Button, Box, Toolbar, Typography, IconButton, Drawer, Tabs, Tab } from '@mui/material';
 
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import CV from "../../assets/mohammedResume.pdf"
+import CV from "../../assets/Resume.pdf"
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import "../../styles/HeaderStyle.css"
