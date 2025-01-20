@@ -1,6 +1,6 @@
 import { Box, Button, Grid } from '@mui/material'
 import React from 'react'
-import CV from "../../assets/mohammedResume.pdf"
+import CV from "../../assets/Resume.pdf"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
