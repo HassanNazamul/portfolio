@@ -58,18 +58,24 @@ const Home = () => {
                 Frontend
               </Typography>
 
-                            <Card className='customCard' >
-                                <CardContent >
-                                    <Grid container rowSpacing={4} padding={2}>
-                                        <Grid item sm={4}>
-                                            <Typography variant='h6' textAlign={'center'}>Java Script</Typography>
-                                        </Grid>
-                                        <Grid item sm={4}>
-                                            <Typography variant='h6' textAlign={'center'}>ReactJs</Typography>
-                                        </Grid>
-                                        <Grid item sm={4}>
-                                            <Typography variant='h6' textAlign={'center'}>NextJS</Typography>
-                                        </Grid>
+              <Card className="customCard">
+                <CardContent>
+                  <Grid container rowSpacing={4} padding={2}>
+                    <Grid item sm={4}>
+                      <Typography variant="h6" textAlign={"center"}>
+                        Java Script
+                      </Typography>
+                    </Grid>
+                    <Grid item sm={4}>
+                      <Typography variant="h6" textAlign={"center"}>
+                        ReactJs
+                      </Typography>
+                    </Grid>
+                    <Grid item sm={4}>
+                      <Typography variant="h6" textAlign={"center"}>
+                        NextJS
+                      </Typography>
+                    </Grid>
 
                     <Grid item xs={4} sm={4} md={4}>
                       <Typography variant="h6" textAlign={"center"}>
